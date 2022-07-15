@@ -1,0 +1,167 @@
+.banner {
+  height: calc(100vh - #{$header-height});
+  // border: 2px solid #fff;
+
+  &__box {
+    // border: 6px solid green;
+    width: 100%;
+    height: calc(100vh - #{$header-height});
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__radio {
+    display: none !important;
+  }
+
+  &__big {
+    // border: 2px solid #fff;
+    width: 500%;
+    height: calc(100vh - #{$header-height});
+    display: flex;
+  }
+
+  &__row {
+    width: 20%;
+    transition: all 2s;
+    position: relative;
+    // border: red 5px solid;
+  }
+
+  &__bannerimg {
+    width: 100%;
+    height: 80vh;
+    // border: 2px solid #fff;
+    position: relative;
+    @include respond(tab-land) {
+      // border: 2px solid #fff;
+      height: 65vh;
+    }
+
+    @include respond(tab-port) {
+      // border: 2px solid #fff;
+      height: 50vh;
+      margin-top: 10rem;
+    }
+    &--img {
+      width: 55rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include respond(tab-land) {
+        width: 45rem;
+      }
+
+      @include respond(tab-port) {
+        width: 40rem;
+      }
+    }
+  }
+
+  &__manual {
+    // border: 2px solid red;
+
+    width: 100%;
+    bottom: 10.2%;
+    position: absolute;
+    // margin-top: -4rem;
+    display: flex;
+    justify-content: center;
+    @include respond(tab-land) {
+      // border: 2px solid #fff;
+      bottom: 28%;
+      position: absolute;
+    }
+
+    @include respond(big-phone) {
+      // border: 2px solid #fff;
+      bottom: 10%;
+      position: absolute;
+    }
+    &-btn {
+      border: 2px solid $color-white-2;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    &-btn:hover {
+      background-color: $color-white-2;
+    }
+  }
+  /*  Functionality */
+  #radio1:checked ~ &__first {
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ &__first {
+    margin-left: -20%;
+  }
+
+  #radio3:checked ~ &__first {
+    margin-left: -40%;
+  }
+
+  #radio4:checked ~ &__first {
+    margin-left: -60%;
+  }
+
+  &__auto {
+    // border: 2px solid #fff;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 10%;
+    @include respond(tab-land) {
+      // border: 2px solid #fff;
+      bottom: 28%;
+      position: absolute;
+    }
+
+    @include respond(big-phone) {
+      // border: 2px solid #fff;
+      bottom: 10%;
+      position: absolute;
+    }
+
+    &-div {
+      border: 2px solid $color-white-2;
+      padding: 5px;
+      border-radius: 10px;
+      transition: 1s;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  #radio1:checked ~ &__auto &__auto-btn1 {
+    background-color: $color-white-2;
+  }
+
+  #radio2:checked ~ &__auto &__auto-btn2 {
+    background-color: $color-white-2;
+  }
+
+  #radio3:checked ~ &__auto &__auto-btn3 {
+    background-color: $color-white-2;
+  }
+
+  #radio4:checked ~ &__auto &__auto-btn4 {
+    background-color: $color-white-2;
+  }
+
+  &__services {
+    height: 20vh;
+    border: 2px solid #fff;
+  }
+}

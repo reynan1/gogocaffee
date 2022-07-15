@@ -1,0 +1,44 @@
+.section-banner {
+  // border: 2px solid #fff;
+  // margin-top: 5rem;
+  background-color: $color-primary;
+
+  @include respond(tab-land) {
+    // border: 2px solid #fff;
+    height: 70vh;
+    margin-top: -5%;
+  }
+
+  @include respond(tab-port) {
+    // border: 2px solid #fff;
+    height: 100vh;
+    margin-top: -5%;
+  }
+}
+
+.section-services {
+  background-color: $color-primary;
+}
+
+.section-product {
+  background-color: $color-primary;
+  height: 50vh;
+  position: relative;
+  // border: 2px solid #fff;
+}
+
+.section-item {
+  background-color: $color-primary;
+  height: 50vh;
+  position: relative;
+  // border: 2px solid #fff;
+}
+
+.section-showcase {
+  background-color: $color-primary;
+  // border: 2px solid #fff;
+}
+
+.section-login {
+  background-color: $color-primary;
+}

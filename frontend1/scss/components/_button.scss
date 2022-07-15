@@ -1,0 +1,87 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    font-weight: $semi-bold-weight;
+    background-color: $color-quinary;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 24px;
+    border-radius: 9px;
+    display: inline-block;
+  }
+
+  @include respond(tab-port) {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: $small-font-size;
+    padding: 12px 20px;
+    // border: 2px solid #fff;
+  }
+}
+
+.btn-medium {
+  &,
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    font-weight: $semi-bold-weight;
+    background-color: $color-senary;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    border-radius: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40% !important;
+  }
+
+  @include respond(tab-port) {
+    margin: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: $small-font-size;
+    padding: 12px 20px;
+    // border: 2px solid #fff;
+  }
+}
+
+.btn-small {
+  &,
+  &:link,
+  &:visited {
+    font-size: $small-font-size;
+    font-weight: $light-weight;
+    background-color: $color-quinary;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
+  @include respond(big-phone) {
+    // border: 2px solid #fff;
+    // background-color: green;
+    padding: 0;
+    padding: 1rem 4rem;
+  }
+
+  @include respond(tab-port) {
+    margin: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: $small-font-size;
+    padding: 12px 20px;
+    // border: 2px solid #fff;
+  }
+}

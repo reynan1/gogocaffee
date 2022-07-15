@@ -1,0 +1,60 @@
+.subscribe {
+  // border: 2px solid #fff;
+  width: 88%;
+  height: 20vh;
+  background-color: $color-primary;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+
+  &__box {
+    // border: 2px solid #fff;
+    display: flex;
+    height: 10vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__cta-box {
+    // border: 2px solid #fff;
+    width: 35%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-secondary;
+
+    @include respond(big-phone) {
+      // border: 2px solid #fff;
+      width: 80%;
+    }
+
+    &-input-tag {
+      background-color: transparent;
+      width: 70%;
+      height: 100%;
+      padding-left: 2rem;
+      color: $color-white-2;
+      border: none;
+      outline: none;
+    }
+
+    &-button-tag {
+      background-color: $color-quinary;
+      color: $color-white-2;
+      letter-spacing: 2px;
+      width: 25%;
+      height: 100%;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-button-tag:hover {
+      background-color: $color-senary;
+      box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.login-footer {
+  height: 5vh;
+  border-top: 0.5px solid $color-quinary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__small--paragraph {
+    font-size: $verysmall-font-size;
+    color: $color-quinary;
+    font-weight: $light-weight;
+    line-height: 1.5;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port) {
+      text-align: center;
+      // border: 2px solid #fff;
+    }
+  }
+}

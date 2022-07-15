@@ -1,0 +1,384 @@
+.item {
+  @include respond(big-phone) {
+    // border: 2px solid #fff;
+    margin-top: 2rem;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  &__container {
+    @include respond(big-phone) {
+      // border: 2px solid #fff;
+      width: 150rem;
+      display: flex;
+    }
+  }
+
+  &__equipment {
+    // border: 0.5px solid #fff;
+    height: 50vh;
+    margin-bottom: 2rem;
+
+    @include respond(big-phone) {
+      // border: 2px solid #fff;
+      // border: 5px solid #fff;
+      height: 50vh !important;
+    }
+  }
+
+  &__button {
+    width: 5rem;
+    height: 5rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(100, 96, 93, 0.1),
+      rgba(56, 54, 52, 0.1)
+    );
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &-icon {
+      font-size: 20px;
+    }
+  }
+
+  &__button-left {
+    position: absolute;
+    left: 2%;
+    z-index: 200;
+  }
+
+  &__button-right {
+    position: absolute;
+    right: 2%;
+    z-index: 200;
+  }
+
+  &__inner {
+    // border: 2px solid #fff;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+
+    @include respond(big-phone) {
+      // border: 2px solid #fff;
+      // border: 0.5px solid red;
+      height: 40vh;
+      margin-bottom: 2rem;
+      overflow: visible;
+    }
+  }
+
+  &__one {
+    // border: 2px solid #fff;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(100, 96, 93, 0.5),
+        rgba(56, 54, 52, 0.5)
+      ),
+      url("../../public/gallery/hero/coffeemaker1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.6s;
+    cursor: pointer;
+
+    @include respond(big-phone) {
+      // border: 2px solid #fff;
+      // border: 0.5px solid red;
+      height: 50vh;
+      margin-bottom: 2rem;
+    }
+
+    &-box {
+      // border: 2px solid #fff;
+      height: 13vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      @include respond(big-phone) {
+        // border: 2px solid #fff;
+        // background-color: red;
+        height: 8vh;
+      }
+    }
+
+    &-header {
+      color: $color-white-2;
+      font-size: $default-font-size;
+      font-weight: $medium-weight;
+    }
+
+    &-paragraph--title {
+      color: $color-white-2;
+      font-size: $small-font-size;
+      font-weight: $light-weight;
+      text-decoration: none;
+    }
+
+    &-paragraph--price {
+      color: $color-quinary;
+      font-size: $small-font-size;
+      font-weight: $light-weight;
+    }
+
+    &-anchor {
+      color: $color-white-2;
+      font-size: $small-font-size;
+      font-weight: $medium-weight;
+      text-decoration: none;
+    }
+  }
+
+  &__one:hover {
+    transform: scale(1.1);
+  }
+
+  &__box {
+    width: 100%;
+    height: 47vh;
+    // border: 2px solid red;
+
+    @include respond(big-phone) {
+      // background-color: green;
+      height: 41vh !important;
+      width: 100%;
+    }
+  }
+
+  &__box-inner {
+    // border: 2px solid #fff;
+    height: 12vh;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    // overflow: hidden;
+
+    @include respond(big-phone) {
+      // background-color: green;
+      height: 8vh;
+    }
+  }
+
+  &__two {
+    // border: 0.5px solid #fff;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(100, 96, 93, 0.1),
+      rgba(56, 54, 52, 0.1)
+    );
+    padding: 1rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s;
+    cursor: pointer;
+
+    @include respond(big-phone) {
+      // background-color: green;
+
+      height: 50vh !important;
+    }
+
+    &-img2 {
+      // border: 2px solid red;
+      width: 230px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__box {
+    width: 100%;
+    height: 49vh;
+    position: relative;
+  }
+
+  &__button-box {
+    // border: 2px solid #fff;
+    height: 9vh;
+    width: 100%;
+    transition: all 0.8s;
+    padding: 1rem 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -20%;
+
+    @include respond(big-phone) {
+      // background-color: green;
+      display: block;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: -22%;
+      width: 80%;
+    }
+
+    &--btn {
+      &,
+      &:link,
+      &:visited {
+        font-size: $small-font-size;
+        font-weight: $light-weight;
+        background-color: $color-quinary;
+        color: #fff;
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem 2rem;
+        cursor: pointer;
+      }
+
+      @include respond(big-phone) {
+        // border: 2px solid #fff;
+        // background-color: green;
+        padding: 0;
+        width: 100%;
+      }
+
+      @include respond(tab-port) {
+        margin: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: $small-font-size;
+        padding: 12px 20px;
+        // border: 2px solid #fff;
+      }
+    }
+  }
+
+  &__two:hover {
+    height: 62vh;
+    background-color: $color-primary;
+    z-index: 10;
+    box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+
+    @include respond(big-phone) {
+      height: 40vh;
+      background-color: $color-primary;
+      z-index: 10;
+      box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+    }
+  }
+
+  &__two:hover {
+    height: 62vh;
+    background-color: $color-primary;
+    z-index: 10;
+    box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+
+    @include respond(big-phone) {
+      height: 40vh;
+      background-color: $color-primary;
+      z-index: 10;
+      box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+    }
+  }
+
+  &__three {
+    // border: 2px solid #fff;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(100, 96, 93, 0.1),
+      rgba(56, 54, 52, 0.1)
+    );
+    padding: 1rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s;
+    cursor: pointer;
+    &-img2 {
+      // border: 2px solid red;
+      width: 230px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__three:hover {
+    height: 62vh;
+    background-color: $color-primary;
+    z-index: 10;
+    box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+  }
+
+  &__four {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(100, 96, 93, 0.1),
+      rgba(56, 54, 52, 0.1)
+    );
+    padding: 1rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s;
+    cursor: pointer;
+    &-img2 {
+      // border: 2px solid red;
+      width: 230px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__four:hover {
+    height: 62vh;
+    background-color: $color-primary;
+    z-index: 10;
+    box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+  }
+
+  &__five {
+    // border: 2px solid #fff;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(100, 96, 93, 0.1),
+      rgba(56, 54, 52, 0.1)
+    );
+    padding: 1rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s;
+
+    cursor: pointer;
+    &-img2 {
+      // border: 2px solid red;
+      width: 230px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__five:hover {
+    height: 62vh;
+    background-color: $color-primary;
+    z-index: 10;
+    box-shadow: 0rem 0.5rem 3rem rgba($color-quinary, 0.15);
+  }
+}
