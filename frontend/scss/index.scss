@@ -20,6 +20,12 @@
 @import "./components/register";
 @import "./components/smallfooter";
 
+/*   admin components  */
+@import "./admin-layout/admin.scss";
+
+/*   admin pages */
+@import "./admin-pages/admin_home";
+
 /*   layout   */
 @import "./layout/footer";
 @import "./layout/grid";

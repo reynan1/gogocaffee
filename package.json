@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nonde server.js",
     "dev": "nodemon server.js",
-    "compile:sass": "node-sass ../frontend/scss/index.scss ../frontend/public/css/index.scss -w"
+    "compile:sass": "node-sass ./frontend/scss/index.scss ./frontend/public/css/index.css -w"
   },
   "keywords": [],
   "author": "",

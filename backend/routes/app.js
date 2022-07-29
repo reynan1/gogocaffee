@@ -16,6 +16,10 @@ router.get("/account/login", (req, res, next) => {
   res.render("./account/registration.ejs");
 });
 
+router.get("/myadmin", (req, res, next) => {
+  res.render("./admin/myadmin.ejs");
+});
+
 router.post("/account/registration/verify", (req, res) => {
   const register = new Register(req.body);
 

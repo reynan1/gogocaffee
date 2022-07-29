@@ -1241,6 +1241,12 @@ body {
       .login-footer__small--paragraph {
         text-align: center; } }
 
+/*   admin components  */
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff !important; }
+
 /*   layout   */
 .footer {
   border-top: 2px solid #e67615;

@@ -1,0 +1,70 @@
+.admin {
+  width: 95%;
+  height: 100vh;
+  border: 2px solid #000;
+  margin: auto;
+
+  &__aside {
+    // border: 2px solid #000;
+    width: 15%;
+    height: 100%;
+    padding: 2rem 2rem;
+  }
+
+  &__top {
+    background-color: $color-white-1;
+    padding: 1rem 2rem;
+    &-logo {
+      &--title {
+        font-size: 2rem;
+        font-weight: $semi-bold-weight;
+        color: $color-primary;
+        text-decoration: none;
+      }
+    }
+
+    &-close {
+      display: none;
+    }
+  }
+
+  &__sidebar {
+    // border: 2px solid #000;
+    background-color: $color-white-1;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+
+    &-link {
+      color: $color-white-4;
+      padding: 1rem 0 1rem 0rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      position: relative;
+
+      &--icon {
+        padding-left: 2rem;
+      }
+    }
+
+    &-link:active {
+      background-color: rgba(132, 139, 200, 0.18);
+      color: #7380ec;
+    }
+
+    &-link:active:before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      background-color: #7380ec !important;
+    }
+
+    &-header {
+      font-size: 1.4rem;
+      font-weight: $medium-weight;
+    }
+  }
+}
