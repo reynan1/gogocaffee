@@ -1,0 +1,74 @@
+<!-- center -->
+<div class="admin__center">
+  <!-- search id -->
+  <div class="admin__search-data">
+    <h3 class="admin__search-data--text">Search Form ID</h3>
+    <form id="search-form" action="/myadmin/customer/search-id" method="get">
+      <div class="admin__search-data--box u-margin-top-medium">
+        <input type="text" class="admin__search-data--input" id="search-data" name="id" maxlength="24"
+          placeholder="...Enter Customer ID">
+        <button type="submit" class="admin__search-data--btn"><span
+            class="material-icons-sharp admin__search-data--icon">search</span>
+        </button>
+      </div>
+    </form>
+
+    <div class="admin__centerAnimation">
+      <div class="admin__ring"> </div>
+      <span class="admin__span">loading...</span>
+    </div>
+
+
+    <!-- seard id table -->
+    <table class="admin__search-data--table u-margin-top-medium">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+      </tr>
+
+      <tr>
+        <td>
+          <span class="data1">
+          </span>
+        </td>
+        <td>
+          <span class="data2">
+          </span>
+        </td>
+        <td>
+          <span class="data3">
+
+          </span>
+        </td>
+        <td>
+          <span class="data4">
+
+          </span>
+        </td>
+      </tr>
+
+    </table>
+    <!-- end of search id table -->
+
+
+    <!-- no result found -->
+
+    <h3 class="admin__search-data--notfound data-error">
+
+    </h3>
+
+
+    <!-- end of no result found -->
+
+    <button type=" button" class="admin__search-data--button u-margin-top-medium close-search">
+      <span class="material-icons-sharp admin__search-data--icons">
+        arrow_back
+      </span>
+    </button>
+  </div>
+  <!-- end search id -->
+
+</div>
+<!-- end of center  -->

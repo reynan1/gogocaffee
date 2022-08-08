@@ -1,0 +1,63 @@
+<!-- center -->
+<div class="admin__center">
+  <div class="admin__register">
+    <a href=" " class="admin__register--btn">Customer</a>
+  </div>
+  <!-- register table -->
+  <div class="admin__register-data">
+    <h3 class="admin__register-data--text">Customer List</h3>
+    <table class="admin__table u-margin-top-medium">
+      <tr>
+        <th>No.</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+      </tr>
+      <% i=0; %>
+        <%data.forEach(element=> { console.log("testing data: " + element) %>
+          <tr>
+            <td>
+              <span>
+                <%= i++ %>
+              </span>
+            </td>
+            <td>
+              <span>
+                <%=element.firstname %>
+              </span>
+            </td>
+            <td>
+              <span>
+                <%=element.lastname %>
+              </span>
+            </td>
+            <td>
+              <span>
+                <%=element.email %>
+              </span>
+            </td>
+            <td>
+              <span>
+                <%=element.mobile_number %>
+              </span>
+            </td>
+          </tr>
+          <% }) %>
+    </table>
+    <button type="button" class="admin__register-data--button u-margin-top-medium close-register">
+      <span class="material-icons-sharp admin__register-data--icons">
+        arrow_back
+      </span>
+    </button>
+  </div>
+  <!-- end register table -->
+  <a href="/myadmin/customer/search-id" class="admin__search">
+
+    <a href=" " class="admin__register--btn">Search Customer</a>
+
+  </a>
+
+
+</div>
+<!-- end of center  -->
